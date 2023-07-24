@@ -1,0 +1,31 @@
+{
+  "name": "@leafer/interaction",
+  "version": "1.0.0-beta.6",
+  "description": "@leafer/interaction",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": ["src"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/leafer.git"
+  },
+  "homepage": "https://github.com/leaferjs/leafer/tree/main/packages/interaction/interaction",
+  "bugs": "https://github.com/leaferjs/leafer/issues",
+  "keywords": [
+    "leafer",
+    "leaferjs"
+  ],
+  "dependencies": {
+    "@leafer/event": "workspace:^",
+    "@leafer/event-ui": "workspace:^",
+    "@leafer/math": "workspace:^",
+    "@leafer/helper": "workspace:^",
+    "@leafer/list": "workspace:^",
+    "@leafer/data": "workspace:^",
+    "@leafer/platform": "workspace:^"
+  },
+  "devDependencies": {
+     "@leafer/interface": "workspace:^"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@leafer/web",
+  "version": "1.0.0-beta.6",
+  "description": "@leafer/web",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": ["src"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/leafer.git"
+  },
+  "homepage": "https://github.com/leaferjs/leafer/tree/main/packages/platform/web",
+  "bugs": "https://github.com/leaferjs/leafer/issues",
+  "keywords": [
+    "leafer",
+    "leaferjs"
+  ],
+  "dependencies": {
+    "@leafer/core": "workspace:^",
+    "@leafer/partner": "workspace:^",
+    "@leafer/canvas-web": "workspace:^",
+    "@leafer/interaction-web": "workspace:^",
+    "@leafer/image-web": "workspace:^"
+  },
+  "devDependencies": {
+     "@leafer/interface": "workspace:^"
+  }
+}

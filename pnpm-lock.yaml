@@ -1,0 +1,801 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  leafer:
+    dependencies:
+      '@leafer/web':
+        specifier: workspace:^
+        version: link:packages/platform/web
+
+  leafer/packages/canvas/canvas:
+    dependencies:
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../../data
+      '@leafer/file':
+        specifier: workspace:^
+        version: link:../../file
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../../list
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../../math
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/canvas/canvas-canvaskit: {}
+
+  leafer/packages/canvas/canvas-miniapp: {}
+
+  leafer/packages/canvas/canvas-node:
+    dependencies:
+      '@leafer/canvas':
+        specifier: workspace:^
+        version: link:../canvas
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/canvas/canvas-web:
+    dependencies:
+      '@leafer/canvas':
+        specifier: workspace:^
+        version: link:../canvas
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../../data
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../../debug
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../../event/event
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/core:
+    dependencies:
+      '@leafer/canvas':
+        specifier: workspace:^
+        version: link:../canvas/canvas
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+      '@leafer/decorator':
+        specifier: workspace:^
+        version: link:../decorator
+      '@leafer/display':
+        specifier: workspace:^
+        version: link:../display
+      '@leafer/display-module':
+        specifier: workspace:^
+        version: link:../display-module
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/event-ui':
+        specifier: workspace:^
+        version: link:../event/event-ui
+      '@leafer/file':
+        specifier: workspace:^
+        version: link:../file
+      '@leafer/helper':
+        specifier: workspace:^
+        version: link:../helper
+      '@leafer/image':
+        specifier: workspace:^
+        version: link:../image/image
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../list
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+      '@leafer/path':
+        specifier: workspace:^
+        version: link:../path
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../platform/platform
+      '@leafer/plugin':
+        specifier: workspace:^
+        version: link:../plugin
+      '@leafer/task':
+        specifier: workspace:^
+        version: link:../task
+
+  leafer/packages/data:
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/debug:
+    dependencies:
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/decorator:
+    dependencies:
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/display:
+    dependencies:
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer/decorator':
+        specifier: workspace:^
+        version: link:../decorator
+      '@leafer/display-module':
+        specifier: workspace:^
+        version: link:../display-module
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/helper':
+        specifier: workspace:^
+        version: link:../helper
+      '@leafer/layout':
+        specifier: workspace:^
+        version: link:../layout
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/display-module:
+    dependencies:
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/event/event:
+    dependencies:
+      '@leafer/decorator':
+        specifier: workspace:^
+        version: link:../../decorator
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/event/event-ui:
+    dependencies:
+      '@leafer/decorator':
+        specifier: workspace:^
+        version: link:../../decorator
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../../list
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/file:
+    dependencies:
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/helper:
+    dependencies:
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/image/image:
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/image/image-canvaskit: {}
+
+  leafer/packages/image/image-miniapp: {}
+
+  leafer/packages/image/image-node: {}
+
+  leafer/packages/image/image-web:
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/interaction/interaction:
+    dependencies:
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../../data
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../../event/event
+      '@leafer/event-ui':
+        specifier: workspace:^
+        version: link:../../event/event-ui
+      '@leafer/helper':
+        specifier: workspace:^
+        version: link:../../helper
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../../list
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../../math
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/interaction/interaction-miniapp: {}
+
+  leafer/packages/interaction/interaction-web:
+    dependencies:
+      '@leafer/event-ui':
+        specifier: workspace:^
+        version: link:../../event/event-ui
+      '@leafer/interaction':
+        specifier: workspace:^
+        version: link:../interaction
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/interface: {}
+
+  leafer/packages/layout:
+    dependencies:
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/layouter:
+    dependencies:
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/helper':
+        specifier: workspace:^
+        version: link:../helper
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../list
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/list:
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/math:
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/partner:
+    dependencies:
+      '@leafer/layouter':
+        specifier: workspace:^
+        version: link:../layouter
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../platform/platform
+      '@leafer/renderer':
+        specifier: workspace:^
+        version: link:../renderer
+      '@leafer/selector':
+        specifier: workspace:^
+        version: link:../selector
+      '@leafer/watcher':
+        specifier: workspace:^
+        version: link:../watcher
+
+  leafer/packages/path:
+    dependencies:
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/platform/canvaskit: {}
+
+  leafer/packages/platform/miniapp:
+    dependencies:
+      '@leafer/canvas-miniapp':
+        specifier: workspace:^
+        version: link:../../canvas/canvas-miniapp
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../core
+      '@leafer/image-miniapp':
+        specifier: workspace:^
+        version: link:../../image/image-miniapp
+      '@leafer/interaction-miniapp':
+        specifier: workspace:^
+        version: link:../../interaction/interaction-miniapp
+      '@leafer/partner':
+        specifier: workspace:^
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/platform/node:
+    dependencies:
+      '@leafer/canvas-node':
+        specifier: workspace:^
+        version: link:../../canvas/canvas-node
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../core
+      '@leafer/image-node':
+        specifier: workspace:^
+        version: link:../../image/image-node
+      '@leafer/interaction':
+        specifier: workspace:^
+        version: link:../../interaction/interaction
+      '@leafer/partner':
+        specifier: workspace:^
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/platform/platform:
+    dependencies:
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../../debug
+      '@leafer/layouter':
+        specifier: workspace:^
+        version: link:../../layouter
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/platform/web:
+    dependencies:
+      '@leafer/canvas-web':
+        specifier: workspace:^
+        version: link:../../canvas/canvas-web
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../core
+      '@leafer/image-web':
+        specifier: workspace:^
+        version: link:../../image/image-web
+      '@leafer/interaction-web':
+        specifier: workspace:^
+        version: link:../../interaction/interaction-web
+      '@leafer/partner':
+        specifier: workspace:^
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../interface
+
+  leafer/packages/plugin:
+    dependencies:
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/renderer:
+    dependencies:
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+      '@leafer/platform':
+        specifier: workspace:^
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/selector:
+    dependencies:
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../list
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/task:
+    dependencies:
+      '@leafer/debug':
+        specifier: workspace:^
+        version: link:../debug
+      '@leafer/math':
+        specifier: workspace:^
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  leafer/packages/watcher:
+    dependencies:
+      '@leafer/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer/event':
+        specifier: workspace:^
+        version: link:../event/event
+      '@leafer/list':
+        specifier: workspace:^
+        version: link:../list
+    devDependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  ui:
+    dependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:packages/interface
+      '@leafer-ui/web':
+        specifier: workspace:^
+        version: link:packages/platform/web
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../leafer/packages/interface
+
+  ui/packages/app:
+    dependencies:
+      '@leafer-ui/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer-ui/display':
+        specifier: workspace:^
+        version: link:../display
+      '@leafer-ui/type':
+        specifier: workspace:^
+        version: link:../type
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/bounds:
+    dependencies:
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  ui/packages/color:
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  ui/packages/core:
+    dependencies:
+      '@leafer-ui/app':
+        specifier: workspace:^
+        version: link:../app
+      '@leafer-ui/decorator':
+        specifier: workspace:^
+        version: link:../decorator
+      '@leafer-ui/display':
+        specifier: workspace:^
+        version: link:../display
+      '@leafer-ui/display-module':
+        specifier: workspace:^
+        version: link:../display-module
+      '@leafer-ui/external':
+        specifier: workspace:^
+        version: link:../external
+      '@leafer-ui/type':
+        specifier: workspace:^
+        version: link:../type
+
+  ui/packages/data:
+    dependencies:
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/decorator:
+    dependencies:
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/display:
+    dependencies:
+      '@leafer-ui/data':
+        specifier: workspace:^
+        version: link:../data
+      '@leafer-ui/decorator':
+        specifier: workspace:^
+        version: link:../decorator
+      '@leafer-ui/display-module':
+        specifier: workspace:^
+        version: link:../display-module
+      '@leafer-ui/text':
+        specifier: workspace:^
+        version: link:../text
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/display-module:
+    dependencies:
+      '@leafer-ui/bounds':
+        specifier: workspace:^
+        version: link:../bounds
+      '@leafer-ui/hit':
+        specifier: workspace:^
+        version: link:../hit
+      '@leafer-ui/render':
+        specifier: workspace:^
+        version: link:../render
+
+  ui/packages/effect: {}
+
+  ui/packages/external:
+    dependencies:
+      '@leafer-ui/effect':
+        specifier: workspace:^
+        version: link:../effect
+      '@leafer-ui/paint':
+        specifier: workspace:^
+        version: link:../paint
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+
+  ui/packages/hit:
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/interface:
+    dependencies:
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/leafer:
+    dependencies:
+      '@leafer/web':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/platform/web
+
+  ui/packages/paint:
+    dependencies:
+      '@leafer-ui/color':
+        specifier: workspace:^
+        version: link:../color
+      '@leafer/core':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/platform/canvaskit: {}
+
+  ui/packages/platform/miniapp: {}
+
+  ui/packages/platform/node:
+    dependencies:
+      '@leafer-ui/core':
+        specifier: workspace:^
+        version: link:../../core
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../../leafer/packages/interface
+      '@leafer/node':
+        specifier: workspace:^
+        version: link:../../../../leafer/packages/platform/node
+
+  ui/packages/platform/web:
+    dependencies:
+      '@leafer-ui/core':
+        specifier: workspace:^
+        version: link:../../core
+      '@leafer/web':
+        specifier: workspace:^
+        version: link:../../../../leafer/packages/platform/web
+
+  ui/packages/render:
+    dependencies:
+      '@leafer-ui/external':
+        specifier: workspace:^
+        version: link:../external
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/text:
+    dependencies:
+      '@leafer-ui/core':
+        specifier: workspace:^
+        version: link:../core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface
+
+  ui/packages/type:
+    dependencies:
+      '@leafer-ui/core':
+        specifier: workspace:^
+        version: link:../core
+    devDependencies:
+      '@leafer-ui/interface':
+        specifier: workspace:^
+        version: link:../interface
+      '@leafer/interface':
+        specifier: workspace:^
+        version: link:../../../leafer/packages/interface

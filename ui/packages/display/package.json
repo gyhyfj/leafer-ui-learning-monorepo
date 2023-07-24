@@ -1,0 +1,30 @@
+{
+  "name": "@leafer-ui/display",
+  "version": "1.0.0-beta.6",
+  "description": "@leafer-ui/display",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": ["src"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/ui.git"
+  },
+  "homepage": "https://github.com/leaferjs/ui/tree/main/packages/display",
+  "bugs": "https://github.com/leaferjs/ui/issues",
+  "keywords": [
+    "leafer-ui",
+    "leaferjs"
+  ],
+  "dependencies": {
+    "@leafer/core": "workspace:^",
+    "@leafer-ui/data": "workspace:^",
+    "@leafer-ui/text": "workspace:^",
+    "@leafer-ui/display-module": "workspace:^",
+    "@leafer-ui/decorator": "workspace:^"
+  },
+  "devDependencies": {
+     "@leafer/interface": "workspace:^",
+     "@leafer-ui/interface": "workspace:^"
+  }
+}

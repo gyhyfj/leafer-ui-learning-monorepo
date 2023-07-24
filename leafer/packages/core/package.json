@@ -1,0 +1,38 @@
+{
+  "name": "@leafer/core",
+  "version": "1.0.0-beta.6",
+  "description": "@leafer/core",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": ["src"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/leafer.git"
+  },
+  "homepage": "https://github.com/leaferjs/leafer/tree/main/packages/core",
+  "bugs": "https://github.com/leaferjs/leafer/issues",
+  "keywords": [
+    "leafer",
+    "leaferjs"
+  ],
+  "dependencies": {
+    "@leafer/canvas": "workspace:^",
+    "@leafer/data": "workspace:^",
+    "@leafer/debug": "workspace:^",
+    "@leafer/decorator": "workspace:^",
+    "@leafer/display": "workspace:^",
+    "@leafer/display-module": "workspace:^",
+    "@leafer/event": "workspace:^",
+    "@leafer/event-ui": "workspace:^",
+    "@leafer/helper": "workspace:^",
+    "@leafer/image": "workspace:^",
+    "@leafer/list": "workspace:^",
+    "@leafer/math": "workspace:^",
+    "@leafer/path": "workspace:^",
+    "@leafer/platform": "workspace:^",
+    "@leafer/plugin": "workspace:^",
+    "@leafer/task": "workspace:^",
+    "@leafer/file": "workspace:^"
+  }
+}

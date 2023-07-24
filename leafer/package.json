@@ -1,0 +1,28 @@
+{
+  "name": "leafer",
+  "version": "1.0.0-beta.6",
+  "description": "leafer",
+  "author": "Chao (Leafer) Wan",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": ["src","dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leaferjs/leafer"
+  },
+  "homepage": "https://github.com/leaferjs/leafer",
+  "bugs": "https://github.com/leaferjs/leafer/issues",
+  "keywords": [
+    "leafer",
+    "leaferjs",
+    "html5",
+    "canvas",
+    "2d",
+    "graphic",
+    "renderer",
+    "engine"
+  ],
+  "dependencies": {
+    "@leafer/web": "workspace:^"
+  }
+}
